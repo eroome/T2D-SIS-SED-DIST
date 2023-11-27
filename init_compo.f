@@ -1,7 +1,11 @@
 !                    *********************
                      SUBROUTINE INIT_COMPO
 !                    *********************
-!
+! 27/11/2023 modified by e.roome to allow for a spatially hetrgenous sediemnt distribution in SISYPHE.
+! The modified subroutine reads 3 sediment % variables named: FRAC1, FRAC2, FRAC3 from the geometry file.
+! These varibles represent the proportion of a particular grain size at each node.
+! The sum of the three varibles must be 1 at every node.
+! The D50 of each fraction is defined in the SISYPHE stering file as usual.
      &(NCOUCHES)
 !
 !***********************************************************************
